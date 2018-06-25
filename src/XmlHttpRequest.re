@@ -98,7 +98,7 @@ external sendArrayBuffer : (t, Js.Typed_array.array_buffer) => unit = "send";
 
 [@bs.send] external sendDocument : (t, Dom.document) => unit = "send";
 
-[@bs.send] external sendObject : (t, Js.t({.})) => unit = "send";
+[@bs.send] external sendObject : (t, Js.t({..})) => unit = "send";
 
 [@bs.send] external sendString : (t, string) => unit = "send";
 
